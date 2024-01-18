@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 14px; text-align: center;  }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 100vh;
+     
+    }
+  </style>
+</head>
+<body class="bg-gray-100 ">
+
+ <div class="md:flex">
+  <div style="width:320px ;" class="mt-6">
+    <img src="images/image-product-desktop.jpg" alt="" class=" rounded-s-xl hidden md:block ">
+  </div>
+  <div style="height: 480px;" class="bg-white md:w-80 w-72 mt-6 rounded-xl mx-4 md:rounded-s-none md:mx-0 ">
+    <div class="">
+      <img src="images/image-product-mobile.jpg" alt="" class="rounded-t-xl md:hidden" > 
+    </div>
+    <div class="ms-5 md:ms-10">
+      <p class="font-mono font-normal text-gray-400 mt-3 text-xs md:mt-7 md:text-sm">PERFUME</p>
+      <div class="hidden md:block" >
+        <p class="font-mono font-extrabold text-2xl mt-3 md:text-4xl md:mt-5 "> Gabrielle</p>
+        <p class="font-mono font-extrabold text-2xl  md:text-4xl  ">Essence Eau</p>
+        <p class="font-mono font-extrabold text-2xl mt-0  md:text-4xl  ">De Parfum</p>
+      </div>
+      <div class="md:hidden block">
+        <p class="font-mono font-extrabold text-2xl mt-3 md:text-4xl md:mt-5 "> Gabrielle Essence Eau De Parfum</p>
+      </div>
+     
+      <p class="font-mono text-xs text-gray-400 mt-3 md:mt-7 md:text-sm md:justify-normal">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+    </div>
+
+    <div class="ms-5 flex md:mt-5 md:ms-9">
+      <p class="font-extrabold text-2xl text-green-700 text font-mono mt-3 md:text-3xl">$149.99</p>
+
+      <p class="text-xs mt-5 ms-4"><strike> $169.99</strike></p>
+
+    </div>
+    <div class="ms-5 md:mt-7 md:ms-10">
+      <button class="bg-green-700 flex font-mono w-60 text-white h-8 rounded-lg text-xs ps-16 pt-2 md:h-12 md:pt-4 md:text-sm"><img src="images/icon-cart.svg" alt=""><p class="ms-3"> Add to Cart</p></button>
+    </div>
+  </div> 
+ </div>
+
+  
+
+ 
+
+  
+
+  
+
+  
+  <div class="attribution mt-5">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Babatunde Sodiq A</a>.
+  </div>
+</body>
+</html>
